@@ -21,7 +21,14 @@ class Vector(object):
             raise TypeError('The coordinates must be an iterable')
 
 
+    def __getitem__(self, i):
+        return self.coordinates[i]
+
+    def __iter__(self):
+        return self.coordinates.__iter__()
+
     def __str__(self):
+        num_decimal_places = 3
         return 'Vector: {}'.format(self.coordinates)
 
 
