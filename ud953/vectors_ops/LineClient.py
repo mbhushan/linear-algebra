@@ -2,9 +2,11 @@ from ud953.vectors_ops.Vector import Vector
 from ud953.vectors_ops.Line import Line
 
 def line_test():
-    v = Vector(['3', '2'])
-    L = Line(normal_vector=Vector(['3', '2']), constant_term='5')
-    print(L)
+    X = Vector(['4.046', '2.836'])
+    Y = Vector(['10.115', '7.09'])
+    L1 = Line(normal_vector=X, constant_term='1.21')
+    L2 = Line(normal_vector=Y, constant_term='3.025')
+    print (L1.is_parallel(L2))
 
 
 def main():
