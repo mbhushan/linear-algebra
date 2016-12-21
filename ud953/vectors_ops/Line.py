@@ -89,6 +89,14 @@ class Line(object):
         return output
 
 
+    def is_parallel(self, y):
+        v = self.normal_vector
+        u = y.normal_vector
+        if (round(v[0] * u[1], 3) == round(v[1] * u[0], 3)):
+            return True
+        return False
+
+
     @staticmethod
     def first_nonzero_index(iterable):
         for k, item in enumerate(iterable):
