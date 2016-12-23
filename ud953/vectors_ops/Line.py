@@ -94,6 +94,9 @@ class Line(object):
         u = y.normal_vector
         return v.is_parallel(u)
 
+    def is_sameline(self, y):
+        None
+
 
     @staticmethod
     def first_nonzero_index(iterable):
