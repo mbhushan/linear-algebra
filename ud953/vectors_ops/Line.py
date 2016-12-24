@@ -97,6 +97,9 @@ class Line(object):
     def is_sameline(self, y):
         None
 
+    def get_intersection(self, y):
+        None
+
 
     @staticmethod
     def first_nonzero_index(iterable):
