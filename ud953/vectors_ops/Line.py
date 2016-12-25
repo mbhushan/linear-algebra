@@ -95,10 +95,10 @@ class Line(object):
         return v.is_parallel(u)
 
     def is_sameline(self, y):
-        None
+        return None
 
     def get_intersection(self, y):
-        None
+        return None
 
 
     @staticmethod
